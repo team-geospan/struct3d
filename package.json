@@ -1,0 +1,62 @@
+{
+  "name": "@team-geospan/struct3d",
+  "version": "1.0.0",
+  "description": "The 3D Viewer component for StructuresJSON models.",
+  "license": "Apache-2.0",
+  "author": "GEOSPAN Corp and Contributors",
+  "type": "module",
+  "scripts": {
+    "build:copy-files": "node ./scripts/bundle.js",
+    "lint": "eslint --report-unused-disable-directives --max-warnings 0 ./lib ./docs --ext .js,.jsx",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "astro dev --root ./docs",
+    "build": "astro build --root ./docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "dependencies": {
+    "@turf/projection": "^6.5.0",
+    "earcut": "^3.0.1",
+    "react-resize-detector": "^12.0.2",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^4.2.0",
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.5.25",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "astro": "^5.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "prop-types": "^15.8.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
