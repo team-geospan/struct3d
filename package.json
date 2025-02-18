@@ -1,13 +1,13 @@
 {
   "name": "@team-geospan/struct3d",
-  "version": "1.0.0",
+  "version": "1.0.w",
   "description": "The 3D Viewer component for StructuresJSON models.",
   "license": "Apache-2.0",
   "author": "GEOSPAN Corp and Contributors",
   "type": "module",
   "scripts": {
     "build:copy-files": "node ./scripts/bundle.js",
-    "lint": "eslint --report-unused-disable-directives --max-warnings 0 ./lib ./docs --ext .js,.jsx",
+    "lint": "eslint --report-unused-disable-directives --max-warnings 0 ./lib ./docs/src --ext .js,.jsx",
     "lint:fix": "npm run lint -- --fix",
     "start": "astro dev --root ./docs",
     "build": "astro build --root ./docs",
@@ -56,7 +56,7 @@
     "prop-types": "^15.8.1"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18 || ^19.0.0",
+    "react-dom": "^18 || ^19.0.0"
   }
 }
