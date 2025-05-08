@@ -1,6 +1,6 @@
 {
   "name": "@team-geospan/struct3d",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The 3D Viewer component for StructuresJSON models.",
   "license": "Apache-2.0",
   "author": "GEOSPAN Corp and Contributors",
